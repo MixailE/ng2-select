@@ -260,6 +260,11 @@ export class SelectComponent implements OnInit {
   }
 
   @Input()
+  public set closeList(value:boolean) {
+    this.hideOptions();
+  }
+
+  @Input()
   public set disabled(value:boolean) {
     this._disabled = value;
     if (this._disabled === true) {
