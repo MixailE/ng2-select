@@ -276,6 +276,7 @@ export class SelectComponent implements OnInit {
     return this._disabled;
   }
 
+
   @Input()
   public set active(selectedItems:Array<any>) {
     if (!selectedItems || selectedItems.length === 0) {
