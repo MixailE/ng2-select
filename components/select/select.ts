@@ -261,7 +261,7 @@ export class SelectComponent implements OnInit {
 
   @Input()
   public set closeList(value:boolean) {
-    this.hideOptions();
+    if( this.inputMode || this.optionsOpened ) this.hideOptions();
   }
 
   @Input()
